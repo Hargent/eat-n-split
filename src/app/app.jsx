@@ -56,6 +56,7 @@ const App = () => {
 			</div>
 			{selectedFriend && (
 				<BillSplit
+					key={selectedFriend.id}
 					selectedFriend={selectedFriend}
 					handleSplitBill={handleSplitBill}
 				/>
